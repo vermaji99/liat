@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ffffff;
+  
+  --color-gold-50: #fbfaf7;
+  --color-gold-100: #f7f4ef;
+  --color-gold-200: #eee7d7;
+  --color-gold-300: #e0d2b5;
+  --color-gold-400: #cdb489;
+  --color-gold-500: #b8915e;
+  --color-gold-600: #a77d50;
+  --color-gold-700: #8b6543;
+  --color-gold-800: #71533b;
+  --color-gold-900: #5d4533;
+  --color-gold-950: #32241a;
+
+  --color-onyx: #0f0f0f;
+  --color-platinum: #e5e5e5;
+  
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-reveal: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  --animate-slow-zoom: slow-zoom 20s linear infinite alternate;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --primary-ease: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Noise Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.section-padding {
+  @apply py-24 md:py-32 lg:py-48;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-2xl border border-white/10;
+}
+
+/* Fluid Typography */
+@layer base {
+  html {
+    @apply text-[14px] sm:text-[15px] md:text-[16px];
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8915e;
+}
+
+/* Utility for masks */
+.mask-reveal {
+  mask-image: linear-gradient(to right, black, transparent);
+  mask-size: 200% 100%;
+  mask-position: 100% 0;
+  transition: mask-position 1.2s var(--primary-ease);
+}
+
+.mask-reveal:hover {
+  mask-position: 0 0;
+}
+
+/* Fluid spacing */
+.section-padding {
+  padding-top: clamp(6rem, 12vw, 15rem);
+  padding-bottom: clamp(6rem, 12vw, 15rem);
+}
+
+/* Custom Text Reveal */
+.text-reveal-mask {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
