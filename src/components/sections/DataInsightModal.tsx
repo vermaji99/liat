@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Users, MapPin, Sparkles, Brain } from "lucide-react";
+import { X, Users, MapPin, Sparkles, Brain, ArrowRight } from "lucide-react";
 
 interface DataInsightModalProps {
   isOpen: boolean;
