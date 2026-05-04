@@ -106,7 +106,7 @@ export default function Stats() {
               </h2>
               
               <p className="text-platinum/40 text-base md:text-lg font-light leading-relaxed max-w-sm mb-10 md:mb-12">
-                We don't just provide space; we provide an audience. Our ecosystem 
+                We don&apos;t just provide space; we provide an audience. Our ecosystem 
                 is built for global brands who demand measurable performance 
                 and absolute visibility.
               </p>
@@ -114,8 +114,8 @@ export default function Stats() {
               <div className="flex flex-col space-y-6">
                 <div className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-sm group hover:border-gold-500/30 transition-all duration-700">
                   <p className="text-white/80 text-base md:text-lg italic mb-4 font-serif">
-                    "The property represents the single most significant 
-                    opportunity for brand dominance in the next decade."
+                    &quot;The property represents the single most significant 
+                    opportunity for brand dominance in the next decade.&quot;
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-gold-400 font-bold">

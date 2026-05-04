@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { ArrowUpRight, ArrowRight, Tag, Globe, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { safePlay, safePause, handleMediaError } from "@/lib/utils";
 import LeasingModule from "./LeasingModule";
 import Magnetic from "@/components/ui/Magnetic";

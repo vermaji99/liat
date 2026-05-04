@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShoppingBag, Star, Zap } from "lucide-react";
+import { ShoppingBag, Star, Zap, ArrowRight } from "lucide-react";
 
 const paths = [
   {
