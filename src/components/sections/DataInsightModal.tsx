@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Users, MapPin, Target, ArrowRight, Sparkles, Brain } from "lucide-react";
+import { X, Users, MapPin, Sparkles, Brain } from "lucide-react";
 
 interface DataInsightModalProps {
   isOpen: boolean;
@@ -72,7 +72,7 @@ export default function DataInsightModal({ isOpen, onClose, stat }: DataInsightM
                     
                     <div className="bg-gold-500/5 border border-gold-500/10 p-6 space-y-4">
                       <p className="text-platinum/60 text-sm italic font-light leading-relaxed">
-                        "Based on current velocity, our neural models predict a 12.4% increase in conversion for premium boutiques within the next 18 months."
+                        &quot;Based on current velocity, our neural models predict a 12.4% increase in conversion for premium boutiques within the next 18 months.&quot;
                       </p>
                       <div className="flex items-center space-x-2 text-[8px] uppercase tracking-[0.2em] text-gold-400 font-bold">
                         <Brain size={12} />

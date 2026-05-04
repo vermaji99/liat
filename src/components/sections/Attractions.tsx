@@ -46,8 +46,8 @@ export default function Attractions() {
                 <span className="italic">Imagination</span>
               </h2>
               <p className="text-platinum/40 text-lg md:text-xl font-light leading-relaxed mb-10 md:mb-16 tracking-wide">
-                Home to the world's most ambitious indoor experiences. 
-                We don't just host visitors; we create memories that transcend 
+                Home to the world&apos;s most ambitious indoor experiences. 
+                We don&apos;t just host visitors; we create memories that transcend 
                 the ordinary.
               </p>
 

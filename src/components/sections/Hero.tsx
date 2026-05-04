@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ChevronDown, Play, Sparkles } from "lucide-react";
-import { useRef, useState, useEffect } from "react";
+import { Play, Sparkles } from "lucide-react";
+import { useRef, useState } from "react";
 import Magnetic from "@/components/ui/Magnetic";
 import { cn, handleMediaError } from "@/lib/utils";
 

@@ -38,12 +38,8 @@ export const safePause = (videoElement: HTMLVideoElement | null) => {
   }
 };
 
-export const handleMediaError = (e: any) => {
-  // Prevent unhandled [object Event] errors from bubbling up
-  // especially for video/image loading failures
-  if (e && e.nativeEvent instanceof Event) {
-    console.debug("Media element error suppressed:", e);
-    return;
-  }
-  console.error("Unhandled media error:", e);
-};
+export function handleMediaError(e: React.SyntheticEvent<HTMLVideoElement | HTMLImageElement>) {
+  const target = e.target as HTMLElement;
+  target.style.display = 'none';
+  console.warn('Media failed to load:', target);
+}

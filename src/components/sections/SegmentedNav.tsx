@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShoppingBag, Star, Zap } from "lucide-react";
-import Magnetic from "@/components/ui/Magnetic";
+import { ShoppingBag, Star, Zap } from "lucide-react";
 
 const paths = [
   {

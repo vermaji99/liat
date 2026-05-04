@@ -57,7 +57,7 @@ export default function Luxury() {
               
               <div className="space-y-8 md:space-y-12 max-w-xl">
                 <p className="text-platinum/50 text-xl md:text-2xl font-light leading-relaxed tracking-wide">
-                  A sanctuary for the world's most storied luxury houses. From 
+                  A sanctuary for the world&apos;s most storied luxury houses. From 
                   rare timepieces to haute couture, we provide an environment 
                   defined by discretion and absolute excellence.
                 </p>

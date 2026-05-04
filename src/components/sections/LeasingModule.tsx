@@ -45,7 +45,7 @@ export default function LeasingModule({ isOpen, onClose }: LeasingModuleProps) {
                     <span className="italic text-gold-500">Global Presence</span>
                   </h2>
                   <p className="text-platinum/40 text-lg font-light leading-relaxed">
-                    Join an elite collection of the world's most successful brands. Our leasing strategy is built on long-term partnership and data-driven placement.
+                    Join an elite collection of the world&apos;s most successful brands. Our leasing strategy is built on long-term partnership and data-driven placement.
                   </p>
                 </div>
 

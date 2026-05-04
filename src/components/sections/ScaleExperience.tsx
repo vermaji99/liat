@@ -2,8 +2,7 @@
 
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
-import { Maximize2, MapPin, Info, ArrowRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Maximize2, Info, ArrowRight } from "lucide-react";
 import Magnetic from "@/components/ui/Magnetic";
 
 const zones = [

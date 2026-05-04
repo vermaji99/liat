@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { X, Play, MapPin, Calendar, Users, ArrowRight, Star } from "lucide-react";
+import { Play, Users, ArrowRight } from "lucide-react";
 import Magnetic from "@/components/ui/Magnetic";
 import { handleMediaError } from "@/lib/utils";
 import Image from "next/image";
@@ -212,11 +212,12 @@ export default function EventsModule() {
   );
 }
 
-function Zap({ size }: { size: number }) {
+function Zap({ size, className }: { size: number; className?: string }) {
   return (
     <svg 
       width={size} 
       height={size} 
+      className={className}
       viewBox="0 0 24 24" 
       fill="none" 
       stroke="currentColor" 

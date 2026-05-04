@@ -58,8 +58,9 @@ export default function BookingModule() {
               <h2 className="text-5xl md:text-7xl font-serif text-white mb-8">
                 Secure Your <span className="italic text-gold-500">Global Mandate</span>
               </h2>
-              <p className="text-platinum/40 text-lg font-light max-w-2xl mx-auto">
-                We don't just lease space; we curate ecosystems. Tell us about your vision, and our executive team will design a strategic placement for your brand.
+              <p className="text-platinum/40 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
+                Ready to secure your brand&apos;s place on the global stage? 
+                Connect with our team to explore exclusive opportunities.
               </p>
             </motion.div>
           </div>

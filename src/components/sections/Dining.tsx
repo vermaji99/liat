@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight, Utensils, Star, Coffee, Wine } from "lucide-react";
 import Image from "next/image";
-import { useRef } from "react";
 import { safePlay, safePause, handleMediaError } from "@/lib/utils";
 
 const experiences = [

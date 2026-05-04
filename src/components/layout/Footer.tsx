@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -25,7 +24,7 @@ export default function Footer() {
             transition={{ delay: 0.2 }}
             className="text-platinum/40 text-lg md:text-2xl font-light leading-relaxed mb-10 md:mb-16 max-w-2xl"
           >
-            Be part of the world's most significant commercial destination. Your global presence begins here.
+            Be part of the world&apos;s most significant commercial destination. Your global presence begins here.
           </motion.p>
           
           <div className="flex flex-col sm:flex-row gap-4 md:gap-8">
